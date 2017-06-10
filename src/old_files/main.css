@@ -1,0 +1,278 @@
+body {
+	width: 1250px;
+	float:left;
+}
+
+td {
+	height: 26px;
+}
+
+
+
+#entityLabel
+{
+	width: 100%;	
+	heigth: 10px;
+}
+
+#entityLabelTopic{
+	float:left;
+	width: 33%;
+	text-align: center;
+}
+			
+#entityLabelPerson{
+	float:left;
+	width: 34%;
+	text-align: center;
+}
+			
+#entityLabelOrganization{
+	float:left;
+	width: 33%;
+	text-align: center;
+}	
+
+			
+#clear{
+	clear:both;
+}
+			
+#content
+{
+	width: 100%;
+	heigth: 600px;	
+}
+
+#contentTopics{
+	float:left;
+	width: 33%;
+}
+
+#contentPersons{
+	float:left;
+	width: 33%;
+}
+
+#contentOrganizations{
+	float:left;
+	width: 34%;
+}
+			
+#contentTopicsTerms{
+	float:left;
+	width: 60%;
+}
+
+#contentTopicsSparklines{
+	float:left;
+	width: 25%;
+}	
+			
+#contentTopicsNotifications{
+	float:left;
+	width: 14%;
+}				
+
+#contentTopicsPadding{
+	float:left;
+	width: 1%;
+}	
+			
+
+
+#contentPersonsTerms{
+	float:left;
+	width: 60%;
+}
+
+#contentPersonsSparklines{
+	float:left;
+	width: 25%;
+}	
+			
+#contentPersonsNotifications{
+	float:left;
+	width: 14%;
+}				
+
+#contentPersonsPadding{
+	float:left;
+	width: 1%;
+}
+			
+
+#contentOrganizationsTerms{
+	float:left;
+	width: 60%;
+}
+
+#contentOrganizationsSparklines{
+	float:left;
+	width: 25%;
+}	
+			
+#contentOrganizationsNotifications{
+	float:left;
+	width: 14%;
+}				
+
+#contentOrganizationsPadding{
+	float:left;
+}	
+			
+			
+#lowerContent
+{
+	width: 100%;
+	heigth: 600px;	
+}
+			
+#lowerContentHierarchyChart{
+	float:left;
+	width: 50%;
+}
+
+
+#contentSpacing{
+	float:left;
+	width: 1%;
+}	
+			
+#lowerContentTextWindow{
+	float:left;
+	width: 49%;
+	overflow-y: scroll;
+	max-height: 300px;
+	
+   	opacity: .9;
+    padding: 5px;
+    border-radius: 5px;
+	border: 1px solid black;
+	z-index: 10;
+	background-color: #EBF4FA;
+}
+
+
+img#close {
+  	cursor: pointer;
+  	position:relative;
+ 	float: right;
+ 	width:2%;
+}
+		
+			
+#control
+{
+	width: 100%;	
+	heigth: 90px;
+}
+
+#control1{
+	float:left;
+	width: 33%;
+}
+			
+#control2{
+	float:left;
+	width: 34%;
+	text-align: center;
+}
+			
+#control3{
+	float:left;
+	width: 33%;
+}	
+
+
+.faculty-group text, .area-group text 
+{
+	font: 11px sans-serif;
+	pointer-events: none;
+}
+
+.faculty-group path, .area-group path 
+{
+	stroke: #000;
+	fill-opacity: 0.7;
+}
+
+.area-group path {
+	fill-opacity: 0.5;
+}
+
+path.chord {
+	stroke-width: .75;
+	fill-opacity: .75;
+}
+	
+.fade {
+	opacity:0;
+}
+
+svg .data-point   {
+	stroke: blue;
+	stroke-width: 0.5px;
+	fill: blue;        
+}
+            
+.chart_group {
+	fill: none;
+	stroke: #000;
+	stroke-width: 0.5px;
+}
+
+div.tooltip {   
+  	position: absolute;           
+  	text-align: center;           
+  	max-width: 100px;                  
+  	max-height: 20px;                 
+  	padding: 2px;             
+  	font: 12px sans-serif;        
+  	background: lightsteelblue;   
+  	border: 0px;      
+  	border-radius: 8px;           
+  	pointer-events: none;         
+}
+
+.termDiv {
+	color: rgb(0,0,255);
+}
+.chord{
+	fill: #FF0000;
+}
+			
+.dot {
+	/*stroke: #000;*/
+	/*stroke: #FF0000;*/
+	fill: #FF0000;
+	/*stroke-width: 4px;*/
+}	
+
+.newsTitle{
+	height: 10%;
+	text-align: center;
+}
+
+.newsText{
+	float:left;
+	height: 80%;
+}	
+
+.newsFooter{
+	float:left;
+	height: 10%;
+	width: 100%;
+}	
+			
+.newsSource{
+	float:left;
+	width: 50%;
+}				
+
+.newsDate{
+	float:left;
+	width: 50%;
+}
+
+.highlight { background-color: yellow }

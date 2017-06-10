@@ -1,0 +1,34 @@
+
+CREATE TABLE IF NOT EXISTS `NewsMetaData` (
+  	`uuid` varchar(50),
+  	`title` varchar(200) DEFAULT NULL,
+  	`summary` varchar(500) DEFAULT NULL,
+  	`language` varchar(70) DEFAULT NULL,
+  	`source` varchar(300) DEFAULT NULL,
+  	`organization` varchar(300) DEFAULT NULL,
+  	`person` varchar(300) DEFAULT NULL,
+  	`doc_url` varchar(300) DEFAULT NULL,
+  	`duplicate` tinyint(1) DEFAULT NULL,
+  	`last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`unix_timestamp` bigint(20),
+	`day` tinyint(2),
+	`month` tinyint(2),
+	`weekday` tinyint(1),
+	`hour` tinyint(2),
+	`minute` tinyint(2),
+	`second` tinyint(2),
+  `weekno` tinyint(2),
+  	PRIMARY KEY (`uuid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `NewsContent` (
+	`uuid` varchar(50),
+	`content` TEXT,
+  	PRIMARY KEY (`uuid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE `NewsMetaData` ADD `year` varchar(5) ;
+ALTER TABLE `NewsMetaData` ADD `topic` varchar(300) DEFAULT NULL;
